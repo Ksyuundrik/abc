@@ -52,6 +52,18 @@ namespace verify2
             return C;
         }
 
+        //деление на число
+        public float[,] DelenMatrixOnNumber(float[,] A, int k, int n)
+        {
+            float[,] C = new float[n, n];
+            for (int i = 0; i < n; i++)
+                for (int j = 0; j < n; j++)
+                {
+                    C[i, j] = A[i, j] / 2;
+                }
+            return C;
+        }
+
         //сложение 2-х матриц
         public float[,] AdditionTwoMatrix(float[,] A, float[,] B, int n)
         {
