@@ -52,6 +52,23 @@ namespace TestMatrix
         }
 
 
+        [TestMethod]
+        public void TestAdditionTwoMatrix()
+        {
+            int n = 4;
+            Matrix matrix = new Matrix();
+            float[,] A = new float[4, 4] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
+            float[,] B = new float[4, 4] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
+            float[,] expected = new float[4, 4] { { 2, 4, 6, 8 }, { 10, 12, 14, 16 }, { 18, 20, 22, 24 }, { 26, 28, 30, 32 } };
+            float[,] C;
+            C = matrix.AdditionTwoMatrix(A, B, n);
+            for (int i = 0; i < n; i++)
+                for (int j = 0; j < n; j++)
+                    Assert.AreEqual(expected[i, j], C[i, j]);
+        }
+
+
+
 
     }
 }

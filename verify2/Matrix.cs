@@ -52,6 +52,16 @@ namespace verify2
             return C;
         }
 
-
+        //сложение 2-х матриц
+        public float[,] AdditionTwoMatrix(float[,] A, float[,] B, int n)
+        {
+            float[,] C = new float[n, n];
+            for (int i = 0; i < n; i++)
+                for (int j = 0; j < n; j++)
+                {
+                    C[i, j] = A[i, j] + B[i, j];
+                }
+            return C;
+        }
     }
 }
