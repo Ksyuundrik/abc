@@ -48,6 +48,18 @@ namespace verify2
                     Console.WriteLine("\n[" + (i + 1) + ", " + (j + 1) + "] = " + C[i, j]);
                 }
             }
+
+
+            C = matrix.MultiplyTwoMatrix(A, B, n);
+
+            Console.WriteLine("Результат перемножения 2-х матриц.");
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    Console.WriteLine("\n[" + (i + 1) + ", " + (j + 1) + "] = " + C[i, j]);
+                }
+            }
         }
     }
 }

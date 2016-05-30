@@ -63,5 +63,23 @@ namespace verify2
                 }
             return C;
         }
+
+
+        //перемножение 2-х матриц
+        public float[,] MultiplyTwoMatrix(float[,] A, float[,] B, int n)
+        {
+            float[,] C = new float[n, n];
+            for (int i = 0; i < n; i++)
+                for (int j = 0; j < n; j++)
+                {
+                    float p = 0;
+                    int k;
+                    for (k = 0; k < n; k++)
+                        p += A[i, k] * B[k, j];
+                    C[i, j] = p;
+                }
+            return C;
+        }
+
     }
 }
