@@ -1,0 +1,253 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>TestMatrix: Класс verify2.Matrix</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Создано системой Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Титульная&nbsp;страница</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="functions.html"><span>Члены&nbsp;классов</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><b>verify2</b>.<a class="el" href="classverify2_1_1_matrix.html">Matrix</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Класс verify2.Matrix</h1><!-- doxytag: class="verify2::Matrix" -->
+<p>
+<a href="classverify2_1_1_matrix-members.html">Полный список членов класса</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Открытые члены</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">float[,]&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classverify2_1_1_matrix.html#a53ed5a12d31c2d518c8bec2896d34a6">TranspositionMatrix</a> (float[,] A, int n)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">float[,]&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classverify2_1_1_matrix.html#c06fc6f590a0545afbcbb0133350579f">MultiplyTwoMatrix</a> (float[,] A, float[,] B, int n)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classverify2_1_1_matrix.html#dc85a1e7fe895e0cb096025d72aa82e9">Symmetry</a> (float[,] A, int n)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">float[,]&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classverify2_1_1_matrix.html#a255bb2ea879291b3fe8a1637f21221c">MultiplyMatrixOnNumber</a> (float[,] A, int k, int n)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">float[,]&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classverify2_1_1_matrix.html#b9c73bb4474e2d7b4175d05eacc57669">AdditionTwoMatrix</a> (float[,] A, float[,] B, int n)</td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Подробное описание</h2>
+Класс для работы с квадратными матрицами<p>
+<dl class="author" compact><dt><b>Автор:</b></dt><dd>Каркавин Максим </dd></dl>
+<hr><h2>Методы</h2>
+<a class="anchor" name="b9c73bb4474e2d7b4175d05eacc57669"></a><!-- doxytag: member="verify2::Matrix::AdditionTwoMatrix" ref="b9c73bb4474e2d7b4175d05eacc57669" args="(float[,] A, float[,] B, int n)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float [,] verify2.Matrix.AdditionTwoMatrix           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>A</em>[,], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>B</em>[,], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>n</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Метод для сложения 2-х квадратных матриц <dl compact><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>A</em>&nbsp;</td><td>- 1-ая матрица (не должна быть равна null, должна быть квадратной) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>B</em>&nbsp;</td><td>- 2-ая матрица (не должна быть равна null, должна быть квадратной, размерность должна быть равна размерности 1-й матрицы) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>n</em>&nbsp;</td><td>- размерность матрицы (должна соответствовать размерности матриц) </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Возвращает:</b></dt><dd>- матрица, являющаяся суммой 1-й и 2-й матриц </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a255bb2ea879291b3fe8a1637f21221c"></a><!-- doxytag: member="verify2::Matrix::MultiplyMatrixOnNumber" ref="a255bb2ea879291b3fe8a1637f21221c" args="(float[,] A, int k, int n)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float [,] verify2.Matrix.MultiplyMatrixOnNumber           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>A</em>[,], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>n</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Метод для умножения квадратной матрицы на число <dl compact><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>A</em>&nbsp;</td><td>- исходная матрица (не должна быть равна null, должна быть квадратной) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>k</em>&nbsp;</td><td>- число, на которое умножаем </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>n</em>&nbsp;</td><td>- размерность матрицы (должна быть равно размерности исходной матрицы) </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Возвращает:</b></dt><dd>- матрица, являющаяся произведением исходной матрицы на число </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c06fc6f590a0545afbcbb0133350579f"></a><!-- doxytag: member="verify2::Matrix::MultiplyTwoMatrix" ref="c06fc6f590a0545afbcbb0133350579f" args="(float[,] A, float[,] B, int n)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float [,] verify2.Matrix.MultiplyTwoMatrix           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>A</em>[,], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>B</em>[,], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>n</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Метод для умножения 2-х квадратных матриц <dl compact><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>A</em>&nbsp;</td><td>- 1-ая матрица (не должна быть равна null, должна быть квадратной) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>B</em>&nbsp;</td><td>- 2-ая матрица (не должна быть равна null, должна быть квадратной, размерность должна быть как у 1-й) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>n</em>&nbsp;</td><td>- размерность матрицы (должна быть равна количеству строк и столбцов матриц) </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Возвращает:</b></dt><dd>- матрица, являющаяся произведением 1-й и 2-й матриц </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="dc85a1e7fe895e0cb096025d72aa82e9"></a><!-- doxytag: member="verify2::Matrix::Symmetry" ref="dc85a1e7fe895e0cb096025d72aa82e9" args="(float[,] A, int n)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool verify2.Matrix.Symmetry           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>A</em>[,], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>n</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Метод для проверки квадратной матрицы на симметричность <dl compact><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>A</em>&nbsp;</td><td>- матрица (не должна быть равна null, должна быть квадратной) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>n</em>&nbsp;</td><td>- размерность матрицы (должна соответствать количеству строк и столбцов) </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Возвращает:</b></dt><dd>- значение типа bool (true, если симметрична, false, если несимметрична) </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a53ed5a12d31c2d518c8bec2896d34a6"></a><!-- doxytag: member="verify2::Matrix::TranspositionMatrix" ref="a53ed5a12d31c2d518c8bec2896d34a6" args="(float[,] A, int n)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float [,] verify2.Matrix.TranspositionMatrix           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>A</em>[,], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>n</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Метод для транспонирования квадратной матрицы <dl compact><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>A</em>&nbsp;</td><td>- исходная матрица (не должна быть равна null, должна быть квадратная) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>n</em>&nbsp;</td><td>- размерность матрицы (должна быть равна количеству строк и столбцов) </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Возвращает:</b></dt><dd>- транспонированная матрица </dd></dl>
+
+</div>
+</div><p>
+<hr>Объявления и описания членов класса находятся в файле:<ul>
+<li>D:/Learning/Verify/verify2/verify2/Matrix.cs</ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Документация по TestMatrix. Последние изменения: Thu Mar 17 17:08:18 2016. Создано системой&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

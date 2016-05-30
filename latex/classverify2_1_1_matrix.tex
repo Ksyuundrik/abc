@@ -1,0 +1,102 @@
+\hypertarget{classverify2_1_1_matrix}{
+\section{Класс verify2.Matrix}
+\label{classverify2_1_1_matrix}\index{verify2::Matrix@{verify2::Matrix}}
+}
+\subsection*{Открытые члены}
+\begin{CompactItemize}
+\item 
+float\mbox{[},\mbox{]} \hyperlink{classverify2_1_1_matrix_a53ed5a12d31c2d518c8bec2896d34a6}{TranspositionMatrix} (float\mbox{[},\mbox{]} A, int n)
+\item 
+float\mbox{[},\mbox{]} \hyperlink{classverify2_1_1_matrix_c06fc6f590a0545afbcbb0133350579f}{MultiplyTwoMatrix} (float\mbox{[},\mbox{]} A, float\mbox{[},\mbox{]} B, int n)
+\item 
+bool \hyperlink{classverify2_1_1_matrix_dc85a1e7fe895e0cb096025d72aa82e9}{Symmetry} (float\mbox{[},\mbox{]} A, int n)
+\item 
+float\mbox{[},\mbox{]} \hyperlink{classverify2_1_1_matrix_a255bb2ea879291b3fe8a1637f21221c}{MultiplyMatrixOnNumber} (float\mbox{[},\mbox{]} A, int k, int n)
+\item 
+float\mbox{[},\mbox{]} \hyperlink{classverify2_1_1_matrix_b9c73bb4474e2d7b4175d05eacc57669}{AdditionTwoMatrix} (float\mbox{[},\mbox{]} A, float\mbox{[},\mbox{]} B, int n)
+\end{CompactItemize}
+
+
+\subsection{Подробное описание}
+Класс для работы с квадратными матрицами
+
+\begin{Desc}
+\item[Автор:]Каркавин Максим \end{Desc}
+
+
+\subsection{Методы}
+\hypertarget{classverify2_1_1_matrix_b9c73bb4474e2d7b4175d05eacc57669}{
+\index{verify2::Matrix@{verify2::Matrix}!AdditionTwoMatrix@{AdditionTwoMatrix}}
+\index{AdditionTwoMatrix@{AdditionTwoMatrix}!verify2::Matrix@{verify2::Matrix}}
+\subsubsection[{AdditionTwoMatrix}]{\setlength{\rightskip}{0pt plus 5cm}float \mbox{[},\mbox{]} verify2.Matrix.AdditionTwoMatrix (float {\em A}\mbox{[},\mbox{]}, \/  float {\em B}\mbox{[},\mbox{]}, \/  int {\em n})}}
+\label{classverify2_1_1_matrix_b9c73bb4474e2d7b4175d05eacc57669}
+
+
+Метод для сложения 2-х квадратных матриц \begin{Desc}
+\item[Аргументы:]
+\begin{description}
+\item[{\em A}]- 1-ая матрица (не должна быть равна null, должна быть квадратной) \item[{\em B}]- 2-ая матрица (не должна быть равна null, должна быть квадратной, размерность должна быть равна размерности 1-й матрицы) \item[{\em n}]- размерность матрицы (должна соответствовать размерности матриц) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Возвращает:]- матрица, являющаяся суммой 1-й и 2-й матриц \end{Desc}
+\hypertarget{classverify2_1_1_matrix_a255bb2ea879291b3fe8a1637f21221c}{
+\index{verify2::Matrix@{verify2::Matrix}!MultiplyMatrixOnNumber@{MultiplyMatrixOnNumber}}
+\index{MultiplyMatrixOnNumber@{MultiplyMatrixOnNumber}!verify2::Matrix@{verify2::Matrix}}
+\subsubsection[{MultiplyMatrixOnNumber}]{\setlength{\rightskip}{0pt plus 5cm}float \mbox{[},\mbox{]} verify2.Matrix.MultiplyMatrixOnNumber (float {\em A}\mbox{[},\mbox{]}, \/  int {\em k}, \/  int {\em n})}}
+\label{classverify2_1_1_matrix_a255bb2ea879291b3fe8a1637f21221c}
+
+
+Метод для умножения квадратной матрицы на число \begin{Desc}
+\item[Аргументы:]
+\begin{description}
+\item[{\em A}]- исходная матрица (не должна быть равна null, должна быть квадратной) \item[{\em k}]- число, на которое умножаем \item[{\em n}]- размерность матрицы (должна быть равно размерности исходной матрицы) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Возвращает:]- матрица, являющаяся произведением исходной матрицы на число \end{Desc}
+\hypertarget{classverify2_1_1_matrix_c06fc6f590a0545afbcbb0133350579f}{
+\index{verify2::Matrix@{verify2::Matrix}!MultiplyTwoMatrix@{MultiplyTwoMatrix}}
+\index{MultiplyTwoMatrix@{MultiplyTwoMatrix}!verify2::Matrix@{verify2::Matrix}}
+\subsubsection[{MultiplyTwoMatrix}]{\setlength{\rightskip}{0pt plus 5cm}float \mbox{[},\mbox{]} verify2.Matrix.MultiplyTwoMatrix (float {\em A}\mbox{[},\mbox{]}, \/  float {\em B}\mbox{[},\mbox{]}, \/  int {\em n})}}
+\label{classverify2_1_1_matrix_c06fc6f590a0545afbcbb0133350579f}
+
+
+Метод для умножения 2-х квадратных матриц \begin{Desc}
+\item[Аргументы:]
+\begin{description}
+\item[{\em A}]- 1-ая матрица (не должна быть равна null, должна быть квадратной) \item[{\em B}]- 2-ая матрица (не должна быть равна null, должна быть квадратной, размерность должна быть как у 1-й) \item[{\em n}]- размерность матрицы (должна быть равна количеству строк и столбцов матриц) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Возвращает:]- матрица, являющаяся произведением 1-й и 2-й матриц \end{Desc}
+\hypertarget{classverify2_1_1_matrix_dc85a1e7fe895e0cb096025d72aa82e9}{
+\index{verify2::Matrix@{verify2::Matrix}!Symmetry@{Symmetry}}
+\index{Symmetry@{Symmetry}!verify2::Matrix@{verify2::Matrix}}
+\subsubsection[{Symmetry}]{\setlength{\rightskip}{0pt plus 5cm}bool verify2.Matrix.Symmetry (float {\em A}\mbox{[},\mbox{]}, \/  int {\em n})}}
+\label{classverify2_1_1_matrix_dc85a1e7fe895e0cb096025d72aa82e9}
+
+
+Метод для проверки квадратной матрицы на симметричность \begin{Desc}
+\item[Аргументы:]
+\begin{description}
+\item[{\em A}]- матрица (не должна быть равна null, должна быть квадратной) \item[{\em n}]- размерность матрицы (должна соответствать количеству строк и столбцов) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Возвращает:]- значение типа bool (true, если симметрична, false, если несимметрична) \end{Desc}
+\hypertarget{classverify2_1_1_matrix_a53ed5a12d31c2d518c8bec2896d34a6}{
+\index{verify2::Matrix@{verify2::Matrix}!TranspositionMatrix@{TranspositionMatrix}}
+\index{TranspositionMatrix@{TranspositionMatrix}!verify2::Matrix@{verify2::Matrix}}
+\subsubsection[{TranspositionMatrix}]{\setlength{\rightskip}{0pt plus 5cm}float \mbox{[},\mbox{]} verify2.Matrix.TranspositionMatrix (float {\em A}\mbox{[},\mbox{]}, \/  int {\em n})}}
+\label{classverify2_1_1_matrix_a53ed5a12d31c2d518c8bec2896d34a6}
+
+
+Метод для транспонирования квадратной матрицы \begin{Desc}
+\item[Аргументы:]
+\begin{description}
+\item[{\em A}]- исходная матрица (не должна быть равна null, должна быть квадратная) \item[{\em n}]- размерность матрицы (должна быть равна количеству строк и столбцов) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Возвращает:]- транспонированная матрица \end{Desc}
+
+
+Объявления и описания членов класса находятся в файле:\begin{CompactItemize}
+\item 
+D:/Learning/Verify/verify2/verify2/Matrix.cs\end{CompactItemize}
