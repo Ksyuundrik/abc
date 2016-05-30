@@ -36,5 +36,22 @@ namespace TestMatrix
         }
 
 
+        [TestMethod]
+        public void TestMultiplyMatrixOnNumber()
+        {
+            int n = 3;
+            int k = 2;
+            Matrix matrix = new Matrix();
+            float[,] A = new float[3, 3] { { 1, 2, 3 }, { 5, 6, 7 }, { 9, 10, 11 } };
+            float[,] expected = new float[3, 3] { { 2, 4, 6 }, { 10, 12, 14 }, { 18, 20, 22 } };
+            float[,] C;
+            C = matrix.MultiplyMatrixOnNumber(A, k, n);
+            for (int i = 0; i < n; i++)
+                for (int j = 0; j < n; j++)
+                    Assert.AreEqual(expected[i, j], C[i, j]);
+        }
+
+
+
     }
 }

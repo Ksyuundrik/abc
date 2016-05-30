@@ -26,6 +26,17 @@ namespace verify2
             bool c = matrix.Symmetry(A, n);
             if (c) Console.WriteLine("Матрица симметрична.");
             else Console.WriteLine("Матрица несимметрична.");
+            float[,] C = new float[n, n];
+            int k=2;
+            C = matrix.MultiplyMatrixOnNumber(A, k, n);
+
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    Console.WriteLine("\n[" + (i + 1) + ", " + (j + 1) + "] = " + C[i, j]);
+                }
+            }
         }
     }
 }

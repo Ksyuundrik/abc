@@ -37,6 +37,21 @@ namespace verify2
             }
             return true;
         }
-      
+
+
+
+        //умножение на число
+        public float[,] MultiplyMatrixOnNumber(float[,] A, int k, int n)
+        {
+            float[,] C = new float[n, n];
+            for (int i = 0; i < n; i++)
+                for (int j = 0; j < n; j++)
+                {
+                    C[i, j] = k * A[i, j];
+                }
+            return C;
+        }
+
+
     }
 }
